@@ -62,6 +62,8 @@ public class ReceitasActivity extends AppCompatActivity {
             atualizarDespesa(receitaAtualizada);
 
             movimentacao.salvar(data);
+
+            finish();
         }
     }
 
