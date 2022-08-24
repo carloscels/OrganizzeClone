@@ -13,6 +13,7 @@ public class Movimentacao {
     private String descricao;
     private String tipo;
     private Double valor;
+    private String key;
 
     public Movimentacao() {
     }
@@ -26,6 +27,15 @@ public class Movimentacao {
                 .child(mesAno)
                 .push()
                 .setValue(this);
+    }
+
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public String getData() {
